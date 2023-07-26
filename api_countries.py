@@ -1,6 +1,5 @@
 import requests
 
-
 def Listar_nombre_paises(url):
     paises = requests.get(url)
     paises = paises.json()
@@ -21,5 +20,4 @@ def Listar_nombre_paises(url):
 
 
 url = 'https://restcountries.com/v3.1/independent?status=true&fields=translations,capital,currencies,idd'
-
 Listar_nombre_paises(url)
